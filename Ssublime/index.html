@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator Project</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+	<script type="text/javascript" src="calc.js"></script>
+</head>
+<body>
+	<div class="container" align="center">
+		<table>
+		<tr>
+			<tr class="name">
+			
+				<td style="color: purple; font-size: 25px">TOPSY</td>
+				<tr style="text-align: right; color: #ffcf79 "><td><i>TX-001 plus</i></td></tr>
+			</tr>	
+				<td>
+				<input type="text" class="display inputDisplay" placeholder="0" id="input" style="color: green;">
+				
+				<input type="text" class="display outputDisplay" id="output" readonly="readonly">
+				</td>
+				<tr>
+				<td>
+				<input type="button" class="number" value="&#8730" onclick="squareRoot()">
+				<input type="button" class="number" value="&#120&sup2"  onclick="square()">
+				<input type="button" class="number" value="RESET" onclick="clearAll()" style="color: white; background-color: red">
+				<input type="button" class="operand" value="&#8592" onclick="backSpace()" backgrocolor="red">
+				</td>
+			</tr>
+			</tr>
+			<tr>
+				<td>
+				<input type="button" class="number" value="7" onclick="getNumber(7)">
+				<input type="button" class="number" value="8" onclick="getNumber(8)">
+				<input type="button" class="number" value="9" onclick="getNumber(9)">
+				<input type="button" class="operand" value="+/-" onclick="getOperand('AS')" backgrocolor="red">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="button" class="number" value="4" onclick="getNumber(4)">
+				<input type="button" class="number" value="5" onclick="getNumber(5)">
+				<input type="button" class="number" value="6" onclick="getNumber(6)">
+				<input type="button" class="operand" value="-" onclick="getOperand('-')">
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="button" class="number" value="1" onclick="getNumber(1)">
+				<input type="button" class="number" value="2" onclick="getNumber(2)">
+				<input type="button" class="number" value="3" onclick="getNumber(3)">
+				<input type="button" class="operand" value="x" onclick="getOperand('*')">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="button" class="number" value="." style="font-size: large " onclick="point()">
+				<input type="button" class="number" value="0" onclick="getNumber(0)">
+				<input type="button" class="number" value="ans" onclick="getAns('ans')">
+				<input type="button" class="operand" value="/" onclick="getOperand('/')">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="button" class="operand" value="(" onclick="getOperand('OB')">
+				<input type="button" class="operand" value=")" onclick="getOperand('CB')">
+				<input type="button" class="operand" value="+" onclick="getOperand('+')">
+				<input type="button" class="equal" value="=" onclick="equalsTo()">
+				</td>
+		</tr>	
+		</tr>
+		</table>
+	</div>
+</body>
+</html>

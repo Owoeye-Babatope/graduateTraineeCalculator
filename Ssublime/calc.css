@@ -1,0 +1,37 @@
+.inputDisplay, .outputDisplay{
+	border: none;
+	height: 20px;
+	width: 20px;
+	border-radius: 5px;
+}
+sup{
+	vertical-align: super;
+	font-size: smaller;
+
+}
+
+.display{
+	width: 300px;
+	text-align: right;
+}
+.container{
+	background-color: #fffff;
+padding: 10px;
+ }
+table{
+	
+	width: 300px;
+	background-color: green; 
+	text-align: center;
+	border-radius: 5px;
+	}
+.number, .operand, .equal{
+	width: 23%;
+	height: 30px; 
+	 }
+
+div{
+	width: auto;
+	border-width: 30px;
+
+}
